@@ -1,0 +1,232 @@
+.main-shop-container {
+  margin-left: 250px; /* adjust if sidebar is fixed */
+  padding: 40px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.shop-section {
+  display: flex;
+  padding: 3rem 1rem;
+  background: transparent; /* ✅ Removes the white background */
+  color: rgb(146, 146, 146);            /* ✅ Keeps text white */
+  justify-content: flex-start;
+  padding-right: 5vw;
+  padding-left: 12vw; /* or margin-left: 20vw; */
+  flex-direction: column; /* stack vertically */
+  gap: 4rem; /* space between products */
+   margin-left: 170px;  /* matches your sidebar width */
+  margin-right: 4px;
+}
+
+
+.shop-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.shop-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.shop-gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.shop-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.main-container {
+  padding-left: 20vw;
+  padding-top: 5rem;
+}
+
+.section-title h1 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: transparent;
+  border: none;
+  padding: 2rem;
+  gap: 3rem;
+  max-width: 1000px; /* controls how wide it gets */
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: transparent; /* ✅ Remove white box */
+  border: none; /* ✅ Remove border */
+  color: white;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.product-row {
+  flex-direction: row;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.product-image img {
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+
+.product-details {
+  flex: 1;
+  font-family: 'Courier', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.product-details h3,
+.product-details p,
+.size-options span,
+.size-options a {
+  color: white;
+}
+
+.product-details h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.price {
+  font-weight: bold;
+}
+
+.size-options {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.add-to-cart img {
+  margin-top: 2rem;
+  width: 90px;
+  cursor: pointer;
+}
+
+.mySwiper {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black;
+}
+
+.swiper {
+  width: 400px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.swiper img {
+  border: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  scale: 0.7;
+}
+
+.enquire-container {
+  padding-left: 45vw;
+  padding-top: 15rem;
+  color: rgb(255, 255, 255);
+  font-family: "Helvetica Bold", Arial, Helvetica, sans-serif;
+}
+
+.enquire-title {
+  font-size: 3rem;
+  letter-spacing: -0.25rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.enquire-subtitle {
+  font-size: 1.5rem;
+  font-family: "Baskerville Light Italic", serif;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 2rem;
+}
+
+.enquire-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.enquire-link {
+  font-size: 3rem;
+  letter-spacing: -0.25rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 69%);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.enquire-link:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.size-options {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.10rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.size-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: 'Courier', monospace;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.size-btn:hover,
+.size-btn.selected {
+  background: white;
+  color: black;
+}
